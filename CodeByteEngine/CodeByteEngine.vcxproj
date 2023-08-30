@@ -14,6 +14,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Util\Error.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Util\Error.h" />
+    <ClInclude Include="src\Windows\Window.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{8A2F1CE4-76FD-0FEA-5F91-80104BFEEB4E}</ProjectGuid>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
