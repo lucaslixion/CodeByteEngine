@@ -1,1 +1,22 @@
-﻿
+﻿  App.cpp
+  Error.cpp
+  Window.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\optional(83,17): warning C4244: 'initializing': conversion from 'WPARAM' to 'int', possible loss of data
+C:\dev\CodeByteEngine\CodeByteEngine\src\Windows\Window.cpp(76,1): message : see reference to function template instantiation 'std::_Optional_destruct_base<_Ty,true>::_Optional_destruct_base<WPARAM&>(std::in_place_t,WPARAM &) noexcept' being compiled
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\optional(249,18): message : see reference to function template instantiation 'std::_Optional_construct_base<_Ty>::_Optional_construct_base<WPARAM&>(std::in_place_t,WPARAM &)' being compiled
+          with
+          [
+              _Ty=int
+          ]
+C:\dev\CodeByteEngine\CodeByteEngine\src\Windows\Window.cpp(65,15): message : see reference to function template instantiation 'std::optional<int>::optional<WPARAM&,0>(_Ty2) noexcept' being compiled
+          with
+          [
+              _Ty2=WPARAM &
+          ]
+C:\dev\CodeByteEngine\CodeByteEngine\src\Windows\Window.cpp(65,5): message : see the first reference to 'std::optional<int>::optional' in 'CodeByte::Windows::Window::PMessage'
+  Generating Code...
+  CodeByteEngine.vcxproj -> C:\dev\CodeByteEngine\bin\Release-windows-x86_64\CodeByteEngine\CodeByteEngine.lib

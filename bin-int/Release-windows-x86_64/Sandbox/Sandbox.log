@@ -1,2 +1,2 @@
 ﻿  Main.cpp
-  Sandbox.vcxproj -> C:\dev\CodeByteEngine\bin\Release-windows-x86_64\Sandbox\Sandbox.exe
+LINK : fatal error LNK1104: cannot open file '..\bin\Release-windows-x86_64\Sandbox\Sandbox.exe'
