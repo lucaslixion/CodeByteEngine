@@ -14,16 +14,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\App.cpp" />
-    <ClCompile Include="src\Util\Error.cpp" />
-    <ClCompile Include="src\Windows\Window.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\App.h" />
-    <ClInclude Include="src\Util\Error.h" />
-    <ClInclude Include="src\Windows\Window.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{8A2F1CE4-76FD-0FEA-5F91-80104BFEEB4E}</ProjectGuid>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -137,6 +127,16 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="Error.h" />
+    <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="Error.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
