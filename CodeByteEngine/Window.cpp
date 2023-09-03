@@ -63,7 +63,7 @@ namespace CodeByte::Windows
 	{
 		switch (msg)
 		{
-		case WM_QUIT:
+		case WM_DESTROY:
 			PostQuitMessage(0);
 			return 0;
 		}

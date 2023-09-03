@@ -12,6 +12,12 @@ project "CodeByteEngine"
 		"**.h",
 		"**.cpp"
 	}
+	
+	links
+	{
+		"d3d11.lib",
+		"d3dcompiler.lib"
+	}
 
 
 
