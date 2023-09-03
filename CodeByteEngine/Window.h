@@ -14,10 +14,10 @@ namespace CodeByte::Windows
 		~Window();
 		void CreateWin(int width, int heigth, LPCWSTR wname);
 		static std::optional<int> ProcessMSG();
+		HWND hwnd;
 	private:
 		static LRESULT CALLBACK HandleMSG(HWND hWnd, UINT msg, WPARAM wparam, LPARAM lparam);
 		WNDCLASSEX wc;
-		HWND hwnd;
 		HINSTANCE hInst;
 		static constexpr LPCWSTR name = L"CodeByte";
 		HRESULT hr;

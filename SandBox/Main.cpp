@@ -1,6 +1,7 @@
 #include <Windows.h>
 
 #include "App.h"
+#include "Graphics.h"
 
 class Sandbox : CodeByte::Windows::App
 {
@@ -13,35 +14,34 @@ public:
 	}
 	virtual ~Sandbox() = default;
 	virtual VOID Draw() override
-	{}
+	{
+	}
 	virtual VOID Update() override
 	{}
-	virtual VOID Begin() override
+	virtual VOID FixedUpdate() override
 	{}
+	virtual VOID Begin() override
+	{
+		Ren2D = new CodeByte::Graphics::Renderer2d(wnd->hwnd);
+		FPS = 60;
+	}
+	int run()
+	{
+		return App::Go();
+	}
 
-	virtual int Go() override;
+private:
+	CodeByte::Graphics::Renderer2d* Ren2D;
 };
 
-int Sandbox::Go()
-{
-	while (true)
-	{
-		if (const auto ecode = CodeByte::Windows::Window::ProcessMSG())
-		{
-			return *ecode;
-		}
-		Update();
-		Draw();
-	}
-}
 
 int CALLBACK WinMain(
-    HINSTANCE hInstance,
-    HINSTANCE hPrevInstance,
-    LPSTR lpCmdLine,
-    int nShowCmd)
+	HINSTANCE hInstance,
+	HINSTANCE hPrevInstance,
+	LPSTR lpCmdLine,
+	int nShowCmd)
 {
 	Sandbox app{};
-	return app.Go();
+	return app.run();
 }
 

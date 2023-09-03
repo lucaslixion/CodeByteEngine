@@ -10,6 +10,12 @@
     <Filter Include="App/Window\Win32">
       <UniqueIdentifier>{f02d34a4-6955-4602-b5dd-98aee9e15197}</UniqueIdentifier>
     </Filter>
+    <Filter Include="2D">
+      <UniqueIdentifier>{677ee63a-6626-4b1a-a1e7-e6ab64c2198e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2D\Win32">
+      <UniqueIdentifier>{4063f971-b8ee-43c9-b7ed-965ea0fe3db6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Error.h">
@@ -21,6 +27,12 @@
     <ClInclude Include="App.h">
       <Filter>App/Window\Win32</Filter>
     </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>2D\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Error.cpp">
@@ -31,6 +43,12 @@
     </ClCompile>
     <ClCompile Include="App.cpp">
       <Filter>App/Window\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>2D\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Util</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
