@@ -1,4 +1,4 @@
-project "CodeByteEngine"
+project "CodeByteMath"
 	kind "StaticLib"
 	language "C++"
 	cppdialect "C++17"
@@ -12,16 +12,6 @@ project "CodeByteEngine"
 		"**.h",
 		"**.cpp"
 	}
-	includedirs
-	{
-		"%{wks.location}/CodeByteMath/"
-	}
-	links
-	{
-		"d3d11.lib",
-		"CodeByteMath"
-	}
-
 
 	filter "system:windows"
 		systemversion "latest"

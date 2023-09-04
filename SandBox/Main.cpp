@@ -15,6 +15,9 @@ public:
 	virtual ~Sandbox() = default;
 	virtual VOID Draw() override
 	{
+		const double c = sin(timer.Peek()) / 2.f + 0.5f;
+		Ren2D->ClearBuffer(c, c, 1.f);
+		Ren2D->Present();
 	}
 	virtual VOID Update() override
 	{}

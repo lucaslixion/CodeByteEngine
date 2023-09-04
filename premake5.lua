@@ -14,6 +14,7 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 group "Core"
 	include "CodeByteEngine"
+	include "CodeByteMath"
 group ""
 
 group "Misc"
