@@ -1,4 +1,0 @@
-﻿  Main.cpp
-C:\dev\CodeByteEngine\SandBox\src\Main.cpp(7,27): warning C4229: anachronism used: modifiers on data are ignored
-CodeByteEngine.lib(Error.obj) : error LNK2005: "class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > __cdecl CodeByte::Util::StringToWide(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?StringToWide@Util@CodeByte@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z) already defined in Main.obj
-..\bin\Debug-windows-x86_64\Sandbox\Sandbox.exe : fatal error LNK1169: one or more multiply defined symbols found

@@ -15,12 +15,14 @@ project "Sandbox"
 
 	includedirs
 	{
-		"%{wks.location}/CodeByteEngine"
+		"%{wks.location}/CodeByteEngine",
+		"%{wks.location}/CodeByteMath"
 	}
 
 	links
 	{
-		"CodeByteEngine"
+		"CodeByteEngine",
+		"CodeByteMath"
 	}
 
 	filter "system:windows"

@@ -10,6 +10,7 @@ project "CodeByteEngine"
 	files
 	{
 		"**.h",
+		"%{wks.location}/%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}/SandBox/Shads",
 		"**.cpp"
 	}
 	includedirs
@@ -21,7 +22,9 @@ project "CodeByteEngine"
 		"d3d11.lib",
 		"CodeByteMath"
 	}
-
+    postbuildcommands {
+        "\"%{wks.location}\\copy_folder.bat\""
+    }
 
 	filter "system:windows"
 		systemversion "latest"

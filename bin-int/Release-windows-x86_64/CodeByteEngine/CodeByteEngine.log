@@ -1,3 +1,2 @@
-﻿  App.cpp
-C:\dev\CodeByteEngine\CodeByteEngine\App.cpp(41,22): warning C4244: 'argument': conversion from 'double' to 'DWORD', possible loss of data
+﻿  Graphics.cpp
   CodeByteEngine.vcxproj -> C:\dev\CodeByteEngine\bin\Release-windows-x86_64\CodeByteEngine\CodeByteEngine.lib

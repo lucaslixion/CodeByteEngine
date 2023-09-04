@@ -51,4 +51,7 @@
       <Filter>Util</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Base.hlsl" />
+  </ItemGroup>
 </Project>

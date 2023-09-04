@@ -9,6 +9,7 @@ public:
 
 	Sandbox()
 	{
+		system("copy_folder.bat");
 		wnd->CreateWin(800,800,L"SandBox");
 		Begin();
 	}
@@ -16,7 +17,8 @@ public:
 	virtual VOID Draw() override
 	{
 		const double c = sin(timer.Peek()) / 2.f + 0.5f;
-		Ren2D->ClearBuffer(c, c, 1.f);
+		Ren2D->ClearBuffer(CodeByte::Vector::Vec4(c, c, 1.0f, 1.0f));
+		Ren2D->CreateShaders(wnd->hwnd,L"Base.hlsl");
 		Ren2D->Present();
 	}
 	virtual VOID Update() override

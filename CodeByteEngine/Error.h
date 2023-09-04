@@ -15,4 +15,4 @@ namespace CodeByte::Util
 }
 
 #define CB_LOG(message) {CodeByte::Util::ErrorLogger{}.Log(message);}
-#define CB_LOG_HR(message,hr) {if (FAILED(hr)) CB_LOG(message);}
+#define CB_LOG_HR(message,hr) {if (FAILED(hr)) CodeByte::Util::ErrorLogger{}.Log(hr,message);}
