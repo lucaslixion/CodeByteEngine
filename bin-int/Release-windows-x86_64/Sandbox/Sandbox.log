@@ -1,4 +1,0 @@
-﻿  Main.cpp
-C:\dev\CodeByteEngine\SandBox\Main.cpp(20,48): warning C4244: 'argument': conversion from 'const double' to 'float', possible loss of data
-C:\dev\CodeByteEngine\SandBox\Main.cpp(20,45): warning C4244: 'argument': conversion from 'const double' to 'float', possible loss of data
-  Sandbox.vcxproj -> C:\dev\CodeByteEngine\bin\Release-windows-x86_64\Sandbox\Sandbox.exe
